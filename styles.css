@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  min-width: 265px;
+}
+
+h1 {
+  font-size: 2em;
+  color: grey;
+  padding-bottom: 0.5em;
+  white-space: nowrap;
+}
+
+nav {
+  display: flex;
+  padding: 1em;
+  background: #777ddd;
+  align-items: center;
+}
+
+nav > div {
+  color: white;
+  width: 25%;
+  text-align: center;
+}
+
+nav div:first-child {
+  font-size: 2em;
+  text-align: left;
+  white-space: nowrap;
+}
+
+nav div:nth-child(2) {
+  font-weight: bold;
+}
+
+main {
+  padding: 1em
+}
+
+#create {
+  border: 1px solid black;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+#create > div {
+  padding-bottom: 1em;
+}
+
+label {
+  color: gray;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 0 1em 0 0;
+}
+
+#first {
+  display: flex;
+  justify-content: space-between;
+}
+
+#last {
+  display: flex;
+  justify-content: space-between;
+}
+
+#depart {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type=text] {
+  border: 1px solid lightgray;
+  width: 70%;
+  color: grey;
+  padding: 2px;
+
+}
+
+select {
+  width: 70%;
+  border: 1px solid gray;
+
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+input[type=reset] {
+background-image: linear-gradient(#dee, #eee, #fffeee);
+padding: 5px;
+border: 1px solid lightgray
+}
+
+input[type=submit] {
+  background: #777ddd;
+  border: 1px solid black;
+  color: white;
+  padding: 5px;
+}
+
+
+
+
+#users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#users > div {
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+  width: 27%;
+  border-radius: 15px;
+  text-align: center;
+  color: grey;
+}
+
+.user {
+  padding-bottom: 1em;
+  font-weight: bold;
+}
+
+
+@media (max-width: 600px) {
+  nav {
+    display: block;
+    padding-bottom: 0;
+  }
+  nav > div {
+    width:100%;
+    padding: 0 0 1em 0;
+    text-align: left;
+  }
+  nav div:first-child {
+    padding-bottom: 0.25em;
+  }
+  main h1:first-child {
+    padding-bottom: 0.5em;
+  }
+  #create {
+    width: 90%;
+
+  }
+
+  #first {
+    display: inline-block;
+  }
+
+  #last {
+    display: inline-block;
+  }
+
+  #depart {
+    display: block;
+  }
+
+  input[type=text] {
+    border: none;
+    margin: 1em 0 0 0;
+  }
+
+  select {
+    border: none;
+    margin: 1em 0 0 0;
+    display: block;
+  }
+
+  #buttons {
+    display: block;
+  }
+
+  input[type=reset] {
+    width: 100%;
+    background: white;
+    border: none;
+  }
+
+  input[type=submit] {
+    width: 100%;
+  }
+
+  #users > div {
+    width: 100%;
+  }
+
+}
